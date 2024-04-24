@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CSS学习</title>
+    <style type="text/css">
+        /**{margin:0;padding:0;}*/
+        a[class="a1"]{text-decoration:none;color:aquamarine;}
+        a:hover[class="a1"]{color:red;margin:0 10px;font-size:30px;}
+        a:active[class="a1"]{color:green;}
+        
+        body{background-color:#c79422b0;color:aliceblue;}
+        .clr{clear:both;}
+        .container{width:80%;margin:auto;}
+        .box1{background-color:#272626;margin:0;border:5px red solid;border-bottom-width:10px;
+              border-top-style:dashed;border-top-right-radius:30px;padding:10px; margin:50px 0;}
+        .box1 h1{font-family:Arial;font-weight:800;font-style:italic;letter-spacing:0.1em;word-spacing:0.5em;
+              text-decoration:underline;text-align:center;}
+        .box1 p{font-family:楷体,小篆,sans-serif;font-size:20px;font-weight:normal;line-height:1.6em;}
+        .box2{border:solid orange 5px;border-bottom-width:10px;padding:10px;margin:50px 0;
+              background-color:#272626;}
+        .box3{border:solid 5px blue;border-bottom-width:10px;padding:10px;margin:50px 0;border-radius:30px;background-color:#272626;}
+        .box3 ul{padding:0 10px;list-style:square;}
+        .box3 li{margin:10px 0;padding-bottom:5px;border-bottom:dotted 3px}
+        .myform{padding:20px;}
+        .form-group{padding:5px 0;}
+        .myform label{display:block;margin:0 0 5px 0}
+        .myform input[type="text"]{padding:8px;width:300px}
+        .button{background-color:#272626;color:white;padding:10px 15px;border:none;}
+        .button:hover{background-color:red;}
+        .block{float:left;width:33.3%;border:solid 3px #ccc;padding:10px;box-sizing:border-box;}
+        #main{float:left;width:70%;padding:15px;box-sizing:border-box;}
+        #sidebar{float:right;width:30%;background-color:#333;color:#fff;padding:15px;box-sizing:border-box;}
+        .p-box{width:800px;height:500px;border:3px solid #000;margin-top:30px;position:relative;
+               background-image:url('images/000303.png');background-repeat:no-repeat;background-position:100px 200px;background-position:center top;}
+        .p-box h1{position:absolute;top:40px;left:40px;}
+        .p-box h2{position:absolute;top:400px;left:600px;}
+        .fix-me{position:fixed;top:400px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <h1>hello world</h1>
+            <p>
+                我想这是一个开始,在这里我将重新建立一个王国,扩充军队,修筑城墙,让我的子民能够安居乐业.
+                待到时机成熟,我将率兵南下,征服远古之地,开阔疆土,解救更多在这乱世中挣扎的难民
+            </p>
+            <a class="button" href="">read more</a>
+        </div>
+        <div class="box2">
+            <h1>dragon festival</h1>
+            <p>
+                这是建国元年,是一个伟大国家建立确定的第一个年份,这是个非常重大的日子,我们将它设立
+                为龙元节,以后的每年的这个时候,全国将举行隆重典礼,国家许多政策也将在届时重新修订,使其
+                更符合国运走势,全国人民也将迎来大假期,举国欢庆.
+            </p>
+        </div>
+        <div class="box3">
+            <h2>国家项目</h2>
+            <ul>
+                <li><a class="a1" href="#">国家政策</a></li>
+                <li><a class="a1" href="#">国家大事</a></li>
+                <li><a class="a1" href="#">人才资源</a></li>
+                <li><a class="a1" href="#">国际贸易</a></li>
+            </ul>
+        </div>
+        <form class="myform">
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" name="name" />
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="text" name="emali" />
+            </div>
+            <div class="form-group">
+                <label>message:</label>
+                <input type="text" name="message" />
+            </div>
+            <input class="button" type="submit" value="submit" name="" />
+        </form>
+        <div class="block">
+            <h3>Heading</h3>
+            <p>感谢您观看此页面,我们后会有期,人生得意须尽欢_莫使金樽空对月</p>
+        </div>
+        <div class="block">
+            <h3>Heading</h3>
+            <p>感谢您观看此页面,我们后会有期,人生得意须尽欢_莫使金樽空对月</p>
+        </div>
+        <div class="block">
+            <h3>Heading</h3>
+            <p>感谢您观看此页面,我们后会有期,人生得意须尽欢_莫使金樽空对月</p>
+        </div>
+        <div class="clr"></div>
+        <div id="main">
+            <h3>再见</h3>
+            <p>人生何处不青山</p>
+        </div>
+        <div id="sidebar">
+            <p>侧边栏</p>
+        </div>
+        <div class="clr"></div>
+        <div class="p-box">
+            <h1>Hello</h1>
+            <h2>goodbye</h2>
+        </div>
+    </div><!--./container-->
+    <a class="fix-me button" href="#">Hello</a>
+    <div style="margin-top:200px;"></div>
+</body>
+</html>
